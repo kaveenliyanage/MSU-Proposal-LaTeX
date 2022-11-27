@@ -17,11 +17,11 @@ In this paper, we provide two main contributions. First, we propose two novel FR
 
 \section{Related Work}\label{sec:relatedwork}
 
-Feature Ranking (FR) is an essential part of the machine learning pipeline to identify, reduce, remove, or craft features that benefits ML performance and reduce the cost of the operations. In general, FR methods evaluate features by looking at the amount of information they provide and ranking them accordingly so that the most relevant and complementary features can be used in ML training. There are three main categories of methods for FR algorithms: Filter methods (FM), Wrapper methods (WM), and Embedded methods (EM). The FR methods can be further classified as \emph{myopic} and \emph{non-myopic}. Whereas \emph{myopic} methods only evaluate the feature by itself, \emph{non-myopic} methods take into the consideration of interrelationship between the features. Several surveys outline the current state-of-the-art in feature assessment techniques\cite{Uthman2020, Sangodiah2014, Effrosynidis2021, Jovic2015}.\\ 
+Feature Ranking (FR) is an essential part of the machine learning pipeline to identify, reduce, remove, or craft features that benefits ML performance and reduce the cost of the operations. In general, FR methods evaluate features by looking at the amount of information they provide and ranking them accordingly so that the most relevant and complementary features can be used in ML training. There are three main categories of methods for FR algorithms: Filter methods (FM), Wrapper methods (WM), and Embedded methods (EM). The FR methods can be further classified as \emph{myopic} and \emph{non-myopic}. Whereas \emph{myopic} methods only evaluate the feature by itself, \emph{non-myopic} methods take into the consideration of interrelationship between the features. Several surveys outline the current state-of-the-art in feature assessment techniques\cite{Uthman2020, Sangodiah2014, Effrosynidis2021, Jovic2015}.
 
-In FM, intrinsic properties are evaluated to determine the relevance of the feature. FM methods are generally computationally inexpensive and do not depend on the ML model since the evaluation is done independently. In WM the feature ranking is tied to the ML model performance. This method is more computationally expensive than the FM as it needs to train multiple ML models to identify which features contribute more. WM is model- and task-specific and, as a result, gives better results. However, WM has to be performed again for a different task or a model. EM is similar to WM, however, it performs the feature selection while the ML model is trained. Therefore, time is saved by avoiding training multiple models by sacrificing performance compared to WM. EM is also model and task-specific.  
+In FM, intrinsic properties are evaluated to determine the relevance of the feature. FM methods are generally computationally inexpensive and do not depend on the ML model since the evaluation is done independently. In WM the feature ranking is tied to the ML model performance. This method is more computationally expensive than the FM as it needs to train multiple ML models to identify which features contribute more. WM is model- and task-specific and, as a result, gives better results. However, WM has to be performed again for a different task or a model. EM is similar to WM, however, it performs the feature selection while the ML model is trained. Therefore, time is saved by avoiding training multiple models by sacrificing performance compared to WM\@. EM is also model and task-specific.  
 
-The proposed SR-based methods can be considered as \textit{non-myopic} and a hybrid of FM and EM concepts. To calculate the two metrics, dictionary learning has to be carried out (like EM), which is more computationally expensive than the typical FM. However, these metrics do not depend on any ML methods so these FR scores can be used in many applications, unlike EM methods. Furthermore, the proposed metrics do not even have to depend on any particular SR method. However, using a discriminatory dictionary learning and (semi-) supervised SR method would be able to improve the interpretation ability of the data. Since the atoms are a subspace of the original feature space when atoms are learned it takes into account the relationship between all the features hence, these metrics are \textit{non-myopic}. Another main advantage is the ability to decompose the feature importance according to each class with supervised dictionary learning methods. Also, the learned dictionary is not wasted as the dictionary and the calculated sparse coefficients can be used for the training of classifiers in the next stages of the machine learning pipeline. 
+The proposed SR-based methods can be considered as \textit{non-myopic} and a hybrid of FM and EM concepts. To calculate the two metrics, dictionary learning has to be carried out (like EM), which is more computationally expensive than the typical FM\@. However, these metrics do not depend on any ML methods so these FR scores can be used in many applications, unlike EM methods. Furthermore, the proposed metrics do not even have to depend on any particular SR method. However, using a discriminatory dictionary learning and (semi-) supervised SR method would be able to improve the interpretation ability of the data. Since the atoms are a subspace of the original feature space when atoms are learned it takes into account the relationship between all the features hence, these metrics are \textit{non-myopic}. Another main advantage is the ability to decompose the feature importance according to each class with supervised dictionary learning methods. Also, the learned dictionary is not wasted as the dictionary and the calculated sparse coefficients can be used for the training of classifiers in the next stages of the machine learning pipeline. 
 
 % Chang and Lin \cite{Chang2008} conducted FR using the weights of the linear SVM. Compared with a variant of Fisher-score \cite{Chang2011} (F-score) method, their method showed improved performance. However, it can be only used with a linear SVM. Jong, et al.\cite{Jong2004}, proposed an ensemble feature ranking (EFR) algorithm that aggregates results of multiple FR algorithms to gain higher performance. 
 
@@ -36,45 +36,43 @@ Relieff\cite{Kononenko1997} and mRMR\cite{Ding2005} are two commonly used FR alg
 \subsection{Feature Extraction}
 
 Rather than extracting features automatically, this paper will follow the works of\cite{Basu2015, Liu2020} and use the same handcrafted 22 features shown in Table\ref{table: Features}, with slight modifications. The RGB value is converted to Hue (H), Saturation (S), and Intensity (I) values, and the color co-occurrence matrix (CCM) is computed\cite{Boyda2017}. Next statistical parameters like mean, variance, 3rd moment, the sum of squares for variance (SSOVH), auto-correlation (AUTOC), and covariance are calculated. The highest Discrete cosine transformation (DCT) frequency value, ignoring the three coefficients that include a DC component, is also used. Several vegetation indexes are computed by utilizing the NIR band information to identify vegetation. The computed features are normalized using the maximum and minimum feature values of the training data with a  buffer of  $5\%$ to allow any variations in the testing data. The data is represented in a logarithmic scale to promote discrimination.
-\begin{table}[tbp]
-    \caption{Handcrafted features for the Sat-4 \& Sat-6 data.}
-    \label{table: Features}
-    \centering
-    \begin{tabular}{|c|c|c|c|}
-        \hline
-        \textbf{} & \textbf{Indices} & \textbf{} & \textbf{Indices}\\
-        \hline
-        1 & I CCM mean & 12 & I std \\
-        \hline
-        2 & H CCM sosvh & 13 & H std \\
-        \hline
-        3 & H CCM autoc & 14 & H mean \\
-        \hline
-        4 & S CCM mean & 15 & I mean \\
-        \hline
-        5 & H CCM mean & 16 & S mean \\
-        \hline
-        6 & Simple Ratio & 17 & I CCM covariance \\
-        & (SR) mean & & \\
-        \hline
-        7 & S CCM 3rd moment & 18 & NIR mean \\
-        \hline
-        8 & I CCM 3rd moment & 19 & Atmospherically Resistant  \\
-        & & & Vegetation Index (ARVI) mean\\
-        \hline
-        9 & I 3rd moment & 20 & Normalized Vegetation Index \\
-        & & & (NDVI) mean\\
-        \hline
-        10 & I variance & 21 & DCT highest non-DC component\\
-        \hline
-        11 & NIR std & 22 & Enhanced Vegetation Index \\
-        & & &EVI mean\\
-        \hline
-    \end{tabular}
-\end{table}
+% \begin{table}[tbp]
+%     \caption{Handcrafted features for the Sat-4 \& Sat-6 data.}\label{table: Features}
+%     \centering
+%     \begin{tabular}{|c|c|c|c|}
+%         \hline
+%         \textbf{} & \textbf{Indices} & \textbf{} & \textbf{Indices}\\
+%         \hline
+%         1 & I CCM mean & 12 & I std \\
+%         \hline
+%         2 & H CCM sosvh & 13 & H std \\
+%         \hline
+%         3 & H CCM autoc & 14 & H mean \\
+%         \hline
+%         4 & S CCM mean & 15 & I mean \\
+%         \hline
+%         5 & H CCM mean & 16 & S mean \\
+%         \hline
+%         6 & Simple Ratio & 17 & I CCM covariance \\
+%         & (SR) mean & & \\
+%         \hline
+%         7 & S CCM 3rd moment & 18 & NIR mean \\
+%         \hline
+%         8 & I CCM 3rd moment & 19 & Atmospherically Resistant  \\
+%         & & & Vegetation Index (ARVI) mean\\
+%         \hline
+%         9 & I 3rd moment & 20 & Normalized Vegetation Index \\
+%         & & & (NDVI) mean\\
+%         \hline
+%         10 & I variance & 21 & DCT highest non-DC component\\
+%         \hline
+%         11 & NIR std & 22 & Enhanced Vegetation Index \\
+%         & & &EVI mean\\
+%         \hline
+%     \end{tabular}
+% \end{table}
 
-\subsection{Feature Ranking Metrics Based on Sparse Representations}
-\label{ssec:FR_metric}
+\subsection{Feature Ranking Metrics Based on Sparse Representations}\label{ssec:FR_metric}
 
 
 
@@ -88,8 +86,7 @@ Rather than extracting features automatically, this paper will follow the works 
 \subfloat[][]{\includegraphics[width=0.6\columnwidth]{S4_FZN.png}}%
 \qquad
 \subfloat[][]{\includegraphics[width=0.6\columnwidth]{S4_LCK.png}}\\
-%\caption{Confusion matrix for Sat-4 dataset with (a) Frozen (b) LC-KSVD dictionary learning methods.}%
-\label{fig: sat4_rslt}%
+\caption{Confusion matrix for Sat-4 dataset with (a) Frozen (b) LC-KSVD dictionary learning methods.}\label{fig: sat4_rslt}%
 
 %\ContinuedFloat
 
@@ -102,12 +99,7 @@ Rather than extracting features automatically, this paper will follow the works 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
-
-
-
-Let $\mathbf{F} = [F_1, F_2, \dots F_d]$ be a set of $d$ features $F$ which are collected or curated. The goal is to rank the feature set $\mathbf{F}$ by evaluating a mean-removed training set of $n$ samples: $\mathbf{\bar{X}} = [x_1, x_2, \dots, x_n] \in \mathbb{R}^{d \times n}$. The set of $k$ classes is defined as $\mathbf{C} = [C_1, C_2, \dots, C_k],$ where each of the $x$ samples is assigned to a class $C$. In sparse representation the input sample is represented as a linear combination of dictionary elements $D$ in a over-complete ($d \ll m$) dictionary $\mathbf{D} = [D_1, D_2, \dots, D_m] \in \mathbb{R}^{d \times m}$, where the number of dictionary elements used, $s$, is far less than the number of dictionary atoms: $s \ll m$. The set coefficients $\bm{\alpha} = [\alpha_1, \alpha_2, \dots, \alpha_n] \in \mathbb{R}^{m \times n}$ of the linear combination is called the sparse coefficients. Each coefficient vector contains $s$ nonzero entries; the remaining $m-s$ entries are exactly zero. The general objective function used for calculating the sparse representation is given by (\ref{eq:sparse}) with an $\ell_0$ constraint on sparsity.
+Let $\mathbf{F} = [F_1$, $F_2$, $\dots F_d]$ be a set of $d$ features $F$ which are collected or curated. The goal is to rank the feature set $\mathbf{F}$ by evaluating a mean-removed training set of $n$ samples: $\mathbf{\bar{X}} = [x_1, x_2, \dots, x_n] \in \mathbb{R}^{d \times n}$. The set of $k$ classes is defined as $\mathbf{C} = [C_1$, $C_2$, $\dots, C_k]$, where each of the $x$ samples is assigned to a class $C$. In sparse representation the input sample is represented as a linear combination of dictionary elements $D$ in a over-complete ($d \ll m$) dictionary $\mathbf{D} = [D_1, D_2, \dots, D_m] \in \mathbb{R}^{d \times m}$, where the number of dictionary elements used, $s$, is far less than the number of dictionary atoms: $s \ll m$. The set coefficients $\bm{\alpha} = [\alpha_1, \alpha_2, \dots, \alpha_n] \in \mathbb{R}^{m \times n}$ of the linear combination is called the sparse coefficients. Each coefficient vector contains $s$ nonzero entries; the remaining $m-s$ entries are exactly zero. The general objective function used for calculating the sparse representation is given by (\ref{eq:sparse}) with an $\ell_0$ constraint on sparsity.
 
 \begin{equation}
     \label{eq:sparse}
@@ -118,7 +110,7 @@ The KSVD algorithm is an efficient iterative method that solves the objective fu
 
 \begin{equation}
     \label{eq:dict_map}
-    \mathbf{D}_\textrm{map}(j)= \sum_{i=1}^m \Proj_j(D_i)^2  = \sum_{i=1}^m \mathbf{D}_{(j,i)}^2 
+    \mathbf{D}_\textrm{map}(j)= {\sum_{i=1}}^m {\Proj_j(D_i)}^2  = \sum_{i=1}^m \mathbf{D}_{(j,i)}^2 
 \end{equation}
 
  The second metric is the \textit{Dictionary utilization}, $\mathbf{D}_\textrm{util} \in \mathbb{R}^{1 \times d}$, which calculated the utilization of the dictionary elements by the sparse coefficients. This acts as a weighted measure of the \textit{dictionary mapping}. Finally, the weighted dictionary atoms are projected back to original features. The equation is given in (\ref{eq:dict_util}).
@@ -128,13 +120,13 @@ The KSVD algorithm is an efficient iterative method that solves the objective fu
     \mathbf{D}_\textrm{util}(j)= \sum_{i=1}^m \Proj_j(D_i \cdot \sum_{k=1}^n |\alpha_{j,k}|)  
 \end{equation}
  
-The KSVD algorithm learns the dictionary in an unsupervised manner, hence we cannot get dictionary elements that are optimized for class discrimination. Therefore several other methods have been proposed to learn a more discriminative dictionary by learning in a supervised manner, giving us a strong association of dictionary atoms with each class. Here we will be exploring two such methods, LC-KSVD and Frozen KSVD. By doing so we can decompose the proposed metrics into classes, which gives more insight into feature behavior concerning class labels. In LC-KSVD the algorithm enforces two extra constraint terms related to dictionary association with each class and linear classifier performance. Hence, samples are forced to utilize a subset of the dictionary atoms for their representation leading to a more discriminatory dictionary. However, when imbalanced data is presented the LC-KSVD algorithm does not change the dictionary atom distribution. Therefore, Frozen KSVD is proposed to take class imbalances into consideration of dictionary learning. It first learns a dictionary only considering the largest class. Then next largest class is trained with added dictionary atoms while keeping the previously learned dictionary atoms fixed (frozen). This forces the algorithm to learn new dictionary atoms which are associated with only the new class. This is repeated for all the classes such that the added number of dictionary atoms and the sparsity of each class are reduced depending on the class size. 
+The KSVD algorithm learns the dictionary in an unsupervised manner, hence we cannot get dictionary elements that are optimized for class discrimination. Therefore several other methods have been proposed to learn a more discriminative dictionary by learning in a supervised manner, giving us a strong association of dictionary atoms with each class. Here we will be exploring two such methods, LC-KSVD and Frozen KSVD\@. By doing so we can decompose the proposed metrics into classes, which gives more insight into feature behavior concerning class labels. In LC-KSVD the algorithm enforces two extra constraint terms related to dictionary association with each class and linear classifier performance. Hence, samples are forced to utilize a subset of the dictionary atoms for their representation leading to a more discriminatory dictionary. However, when imbalanced data is presented the LC-KSVD algorithm does not change the dictionary atom distribution. Therefore, Frozen KSVD is proposed to take class imbalances into consideration of dictionary learning. It first learns a dictionary only considering the largest class. Then next largest class is trained with added dictionary atoms while keeping the previously learned dictionary atoms fixed (frozen). This forces the algorithm to learn new dictionary atoms which are associated with only the new class. This is repeated for all the classes such that the added number of dictionary atoms and the sparsity of each class are reduced depending on the class size. 
 
 \section{Results}
 
 \subsection{Classification Accuracy}
 
-We first tested the classification accuracy of using both Frozen KSVD and LC-KSVD followed by linear classifiers. Both methods result in accuracy greater than $96\%$ on the Sat-4 dataset and greater than 98\% on the Sat-6 dataset. The confusion matrices for the two methods for each dataset are shown in Fig. \ref{fig: sat6_rslt}, respectively. For Sat-4  we see a higher confusion between the barren land and grassland. This might be due to the images containing both grass patches and barren land. Future work could mitigate this error by introducing an additional handcrafted feature that could distinguish between the grass and barren land. For the Sat-6, we observe that the water is almost perfectly classified using both methods. Still, the confusion between the barren land and grassland prevails. Also, confusion between roads and buildings is present. This might be caused by a similar composition and color of images in both classes. This could be mitigated by introducing a cost matrix in the classifier training stage to give a higher penalty for \textit{road}-\textit{building} misclassifications. 
+We first tested the classification accuracy of using both Frozen KSVD and LC-KSVD followed by linear classifiers. Both methods result in accuracy greater than $96\%$ on the Sat-4 dataset and greater than 98\% on the Sat-6 dataset. The confusion matrices for the two methods for each dataset are shown in Fig.\ref{fig: sat6_rslt}, respectively. For Sat-4  we see a higher confusion between the barren land and grassland. This might be due to the images containing both grass patches and barren land. Future work could mitigate this error by introducing an additional handcrafted feature that could distinguish between the grass and barren land. For the Sat-6, we observe that the water is almost perfectly classified using both methods. Still, the confusion between the barren land and grassland prevails. Also, confusion between roads and buildings is present. This might be caused by a similar composition and color of images in both classes. This could be mitigated by introducing a cost matrix in the classifier training stage to give a higher penalty for \textit{road}-\textit{building} misclassifications. 
 
 Although the accuracy of the proposed method does not meet the state-of-art performances\cite{Liyanage2020}, it does provide other benefits which deep networks lack. First, the usage of simpler linear classifiers reduces the computational complexity and overall training time in the classification stage. Second, since the input features and the learned dictionary elements are in the same space, they provide a more intuitive understanding of the workings of the architecture. By analyzing the dictionary elements that are used in the representation for each class we can understand the impact of each handcrafted feature in the final performance. By doing so, decisions can be made regarding the effectiveness of selected features and whether redundant features are present or additional features are required for specific class separations. This kind of intuitive \say{backward analysis} is not possible with deep networks due to the highly non-linear, interconnected relationship of the network connections between layers. 
 
@@ -171,14 +163,13 @@ When we examine the dictionary atoms used by correctly and incorrectly classifie
 
 As an example, we can take a closer look at the most prevailing confusion between classes \textit{barren land} and \textit{grassland} in the Sat-6 dataset from the Frozen dictionary model. Most of the the misclassified images belonging to these classes contain soil and grass patches. For brevity, we do not present images of the misclassified data points, but the difficulty in producing accurate ground-truth labels likely contributes to the confusion and lower accuracy. This can be observed also in the misclassified \textit{building} class, where many of the images misclassified as \textit{roads} were parking lots. This, combined with the fact that \textit{roads} have very small training data, would accumulate to the low performance of the \textit{road} class. While a similar analysis could be done for images classified with a deep network, the linearity employed by dictionary learning and classification in this work allows for a more comprehensive analysis. 
 
-Fig. \ref{fig:FR} shows the \textit{dictionary mapping} and the \textit{dictionary utilization} of the sparse coefficients used by dictionary elements projected into the original feature space from the frozen KSVD method on Sat-6 data. Since each dictionary atom is associated with a class, the class-wise metric analysis is performed on the original features. It also shows the FR done by the non-class specific Releiff and mRMR methods. Both proposed metrics perform in a similar fashion. While their scores are closer to the Relieff method they are also able to capture some important features predicted by mRMR method (e.g. \textit{H CCM autoc} and \textit{EVI}). The proposed methods also match the Relieff method in identifying SR mean and DCT as underutilized features.
+Fig.\ref{fig:FR} shows the \textit{dictionary mapping} and the \textit{dictionary utilization} of the sparse coefficients used by dictionary elements projected into the original feature space from the frozen KSVD method on Sat-6 data. Since each dictionary atom is associated with a class, the class-wise metric analysis is performed on the original features. It also shows the FR done by the non-class specific Releiff and mRMR methods. Both proposed metrics perform in a similar fashion. While their scores are closer to the Relieff method they are also able to capture some important features predicted by mRMR method (e.g. \textit{H CCM autoc} and \textit{EVI}). The proposed methods also match the Relieff method in identifying SR mean and DCT as underutilized features.
 
-The shortcomings of SR are well recorded in cases where an abundance of bare soil is present, and indices like Soil Adjusted Vegetation Indexes (SAVI) can be used to mitigate this problem \cite{Huete1988}. Due to the presence of similar texture in both \textit{barren land} and \textit{grassland} classes, its DCT components also give similar results. Since we have used a modified and more statistical version of the 22 features selected by \cite{Basu2015}, some features do not perform well with the sparse model. Using sparse coding and linear classifiers, we can identify, evaluate, and improve the necessary input features that might increase the performance of the classification.
+The shortcomings of SR are well recorded in cases where an abundance of bare soil is present, and indices like Soil Adjusted Vegetation Indexes (SAVI) can be used to mitigate this problem\cite{Huete1988}. Due to the presence of similar texture in both \textit{barren land} and \textit{grassland} classes, its DCT components also give similar results. Since we have used a modified and more statistical version of the 22 features selected by\cite{Basu2015}, some features do not perform well with the sparse model. Using sparse coding and linear classifiers, we can identify, evaluate, and improve the necessary input features that might increase the performance of the classification.
 
-Concerning classification performance between the two SR methods used, Frozen KSVD performs slightly better than the LC-KSVD in the Sat-6 dataset. This is possibly due to the strategy Frozen KSVD employs in taking class sizes into account and learning dictionary elements hierarchically. This enables the algorithm to produce dictionary atoms that specifically model the smaller classes. For the Sat-4 dataset, Frozen KSVD performs notably better than LC-KSVD. This may be due to the high variability of the \textit{none} class.
+Concerning classification performance between the two SR methods used, Frozen KSVD performs slightly better than the LC-KSVD in the Sat-6 dataset. This is possibly due to the strategy Frozen KSVD employs in taking class sizes into account and learning dictionary elements hierarchically. This enables the algorithm to produce dictionary atoms that specifically model the smaller classes. For the Sat-4 dataset, Frozen KSVD performs notably better than LC-KSVD\@. This may be due to the high variability of the \textit{none} class.
 
-\section{Conclusion}
-\label{sec:conclusion}
+\section{Conclusion}\label{sec:conclusion}
 
 In this paper, we have proposed two metrics for feature ranking. Said metrics were compared with some popular FR methods to demonstrate that the ranking yields similar results. These metrics are ML model-independent and can thus be used with a wide variety of classifier models. Additionally, with the class decomposition of the metrics, a better insight can be gained into the model behavior. As a preliminary demonstration, metrics were used with satellite/ airborne scene classification using a sparse representation-based method with the use of linear classifiers. Two discriminative dictionary learning methods, Frozen KSVD and LC-KSVD were tested. We were able to achieve relatively high-end results using an ensemble of simple linear classifiers. The main advantage of utilizing these methods is the ability to gain an intuitive understanding of the relationship between the learned sparse coefficients and the original feature space. We have shown with an example analyses the backward interpretation of the learned sparse coefficients and the classifier to the original feature space which enable an intuitive analysis of the model. 
 
