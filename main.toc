@@ -1,3 +1,7 @@
 \setcounter {tocdepth}{3}
 \contentsline {chapter}{\numberline {1.}\MakeUppercase {Introduction}}{1}{chapter.1}%
+\contentsline {section}{figure example}{1}{section*.10}%
+\setcounter {tocdepth}{3}
+\contentsline {chapter}{\numberline {2.}\MakeUppercase {Background}}{3}{chapter.2}%
+\contentsline {section}{Sparse Representation and Dictionary Learning}{3}{section*.12}%
 \setcounter {tocdepth}{3}

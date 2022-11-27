@@ -5,4 +5,21 @@ M.~Aharon, M.~Elad, and A.~Bruckstein, ``K-{SVD}: An algorithm for designing
   overcomplete dictionaries for sparse representation,'' {\em {IEEE}
   Transactions on Signal Processing}, vol.~54, pp.~4311--4322, nov 2006.
 
+\bibitem{Pati1993}
+Y.~Pati, R.~Rezaiifar, and P.~Krishnaprasad, ``Orthogonal matching pursuit:
+  Recursive function approximation with applications to wavelet
+  decomposition,'' in {\em Proceedings of 27th Asilomar Conference on Signals,
+  Systems and Computers}, pp.~40--44, IEEE, {IEEE} Comput. Soc. Press, 1993.
+
+\bibitem{Jiang2011}
+Z.~Jiang, Z.~Lin, and L.~S. Davis, ``Learning a discriminative dictionary for
+  sparse coding via label consistent k-{SVD},'' in {\em {CVPR} 2011}, {IEEE},
+  jun 2011.
+
+\bibitem{Carroll2017}
+B.~T. Carroll, B.~M. Whitaker, W.~Dayley, and D.~V. Anderson, ``Outlier
+  learning via augmented frozen dictionaries,'' {\em {IEEE}/{ACM} Transactions
+  on Audio, Speech, and Language Processing}, vol.~25, pp.~1207--1215, jun
+  2017.
+
 \end{thebibliography}

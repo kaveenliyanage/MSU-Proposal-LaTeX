@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.25)  27 NOV 2022 06:59
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.25)  27 NOV 2022 06:19
->>>>>>> c866453 (added abstract)
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.25)  27 NOV 2022 08:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -446,35 +442,55 @@ Package breakurl Warning: You are using breakurl while processing via pdflatex.
 (breakurl)                \burl will be just a synonym of \url.
 (breakurl)                 on input line 48.
 
+) (/usr/share/texlive/texmf-dist/tex/latex/dirtytalk/dirtytalk.sty
+Package: dirtytalk 2010/11/21 A package making "quoting" easier
+\c@dirtytalk@qdepth=\count327
+) (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip77
+\multirow@cntb=\count328
+\multirow@dima=\skip78
+\bigstrutjot=\dimen196
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2021/04/25 v1.2e Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup6
+\symboldletters=\mathgroup7
+\symboldsymbols=\mathgroup8
+Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
+Package bm Info: No bold for \U/msa/m/n, using \pmb.
+Package bm Info: No bold for \U/msb/m/n, using \pmb.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 145.
-Package hyperref Info: Option `draft' set `false' on input line 145.
-Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 145.
-Package hyperref Info: Option `pdffitwindow' set `true' on input line 145.
-Package hyperref Info: Option `plainpages' set `false' on input line 145.
- (./main.aux (./introduction.aux))
+Package hyperref Info: Option `colorlinks' set `true' on input line 158.
+Package hyperref Info: Option `draft' set `false' on input line 158.
+Package hyperref Info: Option `pdfdisplaydoctitle' set `true' on input line 158.
+Package hyperref Info: Option `pdffitwindow' set `true' on input line 158.
+Package hyperref Info: Option `plainpages' set `false' on input line 158.
+ (./main.aux (./introduction.aux) (./background.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 150.
-LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 163.
+LaTeX Font Info:    ... okay on input line 163.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -514,16 +530,16 @@ LaTeX Font Info:    ... okay on input line 150.
 File: fc-english.def 2016/01/12
 ) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count327
-\scratchdimen=\dimen196
+\scratchcounter=\count329
+\scratchdimen=\dimen197
 \scratchbox=\box61
-\nofMPsegments=\count328
-\nofMParguments=\count329
+\nofMPsegments=\count330
+\nofMParguments=\count331
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count330
-\MPscratchDim=\dimen197
-\MPnumerator=\count331
-\makeMPintoPDFobject=\count332
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen198
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
 \everyMPtoPDFconversion=\toks32
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -535,8 +551,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count333
-Package hyperref Info: Link coloring ON on input line 150.
+\c@lstlisting=\count335
+Package hyperref Info: Link coloring ON on input line 163.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -544,54 +560,54 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count334
+\c@section@level=\count336
 )
-LaTeX Info: Redefining \ref on input line 150.
-LaTeX Info: Redefining \pageref on input line 150.
-LaTeX Info: Redefining \nameref on input line 150.
+LaTeX Info: Redefining \ref on input line 163.
+LaTeX Info: Redefining \pageref on input line 163.
+LaTeX Info: Redefining \nameref on input line 163.
  (./main.out) (./main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-LaTeX Info: Redefining \\ on input line 153.
+LaTeX Info: Redefining \\ on input line 166.
 
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 153--153
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 166--166
  [] 
  []
 
 
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 153--153
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 166--166
  [][] 
  []
 
 
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 153--153
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 166--166
  [][] 
  []
 
 
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 153--153
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 166--166
  [][] 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 153--153
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 166--166
  [] 
  []
 
 LaTeX Font Info:    Font shape `U/ccicons/m/n' will be
-(Font)              scaled to size 12.0pt on input line 153.
+(Font)              scaled to size 12.0pt on input line 166.
 
-Overfull \hbox (3.91663pt too wide) in paragraph at lines 153--153
+Overfull \hbox (3.91663pt too wide) in paragraph at lines 166--166
  [][] 
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.153 \begin{preliminary}
+l.166 \begin{preliminary}
                           [1
 
 ]
@@ -890,37 +906,60 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (./introduction.tex
 *****************  Chapter 1. Introduction  *****************
-<example-image-duck.pdf, id=90, 184.55048pt x 114.2107pt>
+<example-image-duck.pdf, id=105, 184.55048pt x 114.2107pt>
 File: example-image-duck.pdf Graphic file (type pdf)
 <use example-image-duck.pdf>
-Package pdftex.def Info: example-image-duck.pdf  used on input line 11.
+Package pdftex.def Info: example-image-duck.pdf  used on input line 14.
 (pdftex.def)             Requested size: 375.80544pt x 232.59285pt.
 ) [1
 
 
 
 
-] [2 </usr/share/texlive/texmf-dist/tex/latex/duckuments/example-image-duck.pdf>] (./main.bbl) [3
+] [2 </usr/share/texlive/texmf-dist/tex/latex/duckuments/example-image-duck.pdf>]
+\openout2 = `background.aux'.
+
+ (./background.tex
+*****************  Chapter 2. Background  *****************
+
+LaTeX Warning: Reference `fig: DictLearn' on page 3 undefined on input line 12.
+
+[3
 
 
 
-] (./main.aux (./introduction.aux))
+
+]
+
+LaTeX Warning: Reference `fig:Indomain' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Reference `fig:Dictdomain' on page 4 undefined on input line 36.
+
+) [4] (./main.bbl) [5
+
+
+
+] (./main.aux (./introduction.aux) (./background.aux))
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: B585642A2020411D038B7D81034F7BCB;1216.
+(rerunfilecheck)             Checksum: 74F8442A29EBD454DBFA00FB1BF57078;1802.
  ) 
 Here is how much of TeX's memory you used:
- 15848 strings out of 480129
- 253775 string characters out of 5893408
- 829418 words of memory out of 5000000
- 33502 multiletter control sequences out of 15000+600000
- 474725 words of font info for 50 fonts, out of 8000000 for 9000
+ 16149 strings out of 480129
+ 259299 string characters out of 5893408
+ 835106 words of memory out of 5000000
+ 33764 multiletter control sequences out of 15000+600000
+ 477494 words of font info for 59 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 83i,7n,131p,1162b,667s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/kaveen/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (10 pages, 53265 bytes).
+ 83i,7n,131p,1273b,667s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/kaveen/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (12 pages, 149439 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 114 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 221 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 

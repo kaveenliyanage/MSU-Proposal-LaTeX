@@ -83,7 +83,14 @@
 
 \usepackage[section]{placeins}
 
+
 \usepackage{breakurl}
+\usepackage{dirtytalk}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{bm}
 
 % Style of code listings (Change as needed)
 \lstset{%set Code listings styles
@@ -106,20 +113,26 @@
 \newcommand{\eg}{e.g.}
 \newcommand{\ie}{i.e.} 
 
+\def\x{{\mathbf\ x}}
+\def\L{{\cal\ L}}
+
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\Proj}{Proj}
+
 % =============================== %
 %  Definitions: Change as needed  %
 % =============================== %
 \name{Kaveen Gayasara Liyanage} %PUT your FULL name here (First Middle Last)
-\DocTitle{Minimal Example of MSU Dissertation Template} 
+\DocTitle{Sparse Representation Method for Whole Graph Embedding} 
 % \OWNwebpage{http://mywebsite.net} %your personal webpage
 \degreetitle{Electrical Engineering} % may be different than department... ie MS in Electrical Engineering is not Elect. and Com. Engnr degree.
 \department{Electrical and Computer Engineering} 
 \committeechair{Dr.\ Bradley Whitaker} 
 \departmentchair{Dr.\ Department Chair}
 \graduatedean{Dr.\ Graduate Dean}
-% \submitdate{April 2017} 
+\submitdate{December 2022} 
 \copyrightyear{\the\year} % add one to year if document submitted in Dec.
-%\draftver{1.0} % versioning for use with draft option
+\draftver{1.0} % versioning for use with draft option
 
 % put searchable words you want internet search engines to find here
 \keys{keywords, latex, MSU, Montana State University} 
@@ -184,8 +197,12 @@
 
 % Dissertation chapters:  add/change as needed
 \include{introduction}
+\include{background.tex}
 
-% \include{FeatureRanking.tex}
+% \include{graph_sparse}
+% \include{FeatureRanking}
+
+
 
 
 

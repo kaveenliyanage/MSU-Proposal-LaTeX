@@ -2,46 +2,47 @@ This is BibTeX, Version 0.99d (TeX Live 2022/dev/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 A level-1 auxiliary file: introduction.aux
+A level-1 auxiliary file: background.aux
 The style file: ieeetr.bst
 Database file #1: misc.bib
-You've used 1 entry,
+You've used 4 entries,
             1876 wiz_defined-function locations,
-            488 strings with 3744 characters,
-and the built_in function-call counts, 397 in all, are:
-= -- 42
-> -- 11
+            514 strings with 4442 characters,
+and the built_in function-call counts, 1306 in all, are:
+= -- 130
+> -- 47
 < -- 0
-+ -- 4
-- -- 3
-* -- 30
-:= -- 59
-add.period$ -- 1
-call.type$ -- 1
-change.case$ -- 1
++ -- 17
+- -- 13
+* -- 99
+:= -- 182
+add.period$ -- 4
+call.type$ -- 4
+change.case$ -- 4
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 18
-empty$ -- 32
-format.name$ -- 3
-if$ -- 93
+cite$ -- 4
+duplicate$ -- 68
+empty$ -- 121
+format.name$ -- 13
+if$ -- 314
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 1
-newline$ -- 6
-num.names$ -- 1
-pop$ -- 1
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 15
+num.names$ -- 4
+pop$ -- 14
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 18
+skip$ -- 50
 stack$ -- 0
-substring$ -- 40
-swap$ -- 11
+substring$ -- 104
+swap$ -- 30
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 4
-width$ -- 2
-write$ -- 12
+while$ -- 13
+width$ -- 5
+write$ -- 42

@@ -1,4 +1,4 @@
-\chapter{Dictionary Learning on Graph Data with Weisfieler-Lehman sub-tree kernel and KSVD\@.}
+\chapter{Dictionary Learning on Graph Data with Weisfieler-Lehman sub-tree kernel and KSVD.}\label{ch:graph_sparse}
 
 \section{Introduction}\label{intro}
 Graph data is usually highly dimensional and defined in a non-euclidean form. Hence, typical processing methods defined on euclidean spaces cannot be used on graph data. Graph embedding methods convert the graph data into a vector representation while trying to preserve original graph properties\cite{Cai2018}.%\cite{Chen2020, Cai2018}.
@@ -10,12 +10,12 @@ which is shown to outperform other linear kernels\cite{shervashidze2011weisfeile
 Some disadvantages of Graph2Vec are the nonlinearity of the learned embedding and the generated sub-tree structures. Due to the nonlinearity, it is difficult to identify which sub-tree structures are contributing to the similarities and differences among graphs. Hence, we propose a linear representation model to replace the Doc2Vec NN architecture. Further, the SkipGram model is capable of embedding only a single node, rather than node combinations. In addition, the SkipGram model considers the neighborhood of the nodes, which depends on an arbitrary node numbering scheme that may not generalize between graphs in a given application.
 
 \begin{figure}[!t]
-\centerline{\includegraphics[width=0.9\columnwidth]{Figures/Gaph2Vec.png}}
+\centerline{\includegraphics[width=0.9\columnwidth]{figures/Gaph2Vec.png}}
 \caption{Graph2Vec pipeline overview}\label{fig: G2V}
 \end{figure}
 
 \begin{figure}[!t]
-\centerline{\includegraphics[width=0.9\columnwidth]{Figures/GraphKSVD.png}}
+\centerline{\includegraphics[width=0.9\columnwidth]{figures/GraphKSVD.png}}
 \caption{Proposed WL+KSVD pipeline overview}\label{fig: GKSVD}
 \end{figure}
 
@@ -26,6 +26,6 @@ Recent work by Matsuo et al.\cite{Matsuo2019} develops a method to represent dif
 To address the shortcomings in sparse vector-based graph representations, we introduce a framework to incorporate WL sub-tree kernel with sparse representation methods specifically aimed at machine learning classification tasks. Our framework allows sparse representation to be applied to graphs with different topologies and different numbers of nodes. In addition, the input graphs can be directed and can incorporate node features. An overview of the proposed WL+KSVD pipeline is shown in Fig.\ref{fig: GKSVD}. The proposed method has the flexibility to swap different dictionary learning and graph kernel methods in the framework. The method is tested against several similar graph embedding methods with benchmark datasets. Finally, the python implementation of the framework and the experiments are currently available on Github\footnote{\url{https://github.com/BMW-lab-MSU/WL-KSVD.git}}.
 
 \begin{figure}[!t]
-\centerline{\includegraphics[width=0.9\columnwidth]{Figures/Workflow.png}}
+\centerline{\includegraphics[width=0.9\columnwidth]{figures/Workflow.png}}
 \caption{Evaluation Workflow}\label{fig: workflow}
 \end{figure}
