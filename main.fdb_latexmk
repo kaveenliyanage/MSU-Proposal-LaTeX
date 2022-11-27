@@ -1,16 +1,30 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["bibtex main"] 1669557577 "main.aux" "main.bbl" "main" 1669557578
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
   "introduction.aux" 1669557578 1478 a337705bce15b4f722c5e4ceb74a07e5 "pdflatex"
   "main.aux" 1669557578 905 768e3e7598698ec8577d4fd676a8a5bb "pdflatex"
+=======
+["bibtex main"] 1669555179 "main.aux" "main.bbl" "main" 1669555180
+  "/usr/share/texlive/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
+  "introduction.aux" 1669555180 1478 7e7fff1dfdaeb7a30ba8c53bc9cddf3e "pdflatex"
+  "main.aux" 1669555180 906 1a2eccc087c603133ca8277dfdef5522 "pdflatex"
+>>>>>>> c866453 (added abstract)
   "misc.bib" 1666769618 31494 e6c78f916464a262c72cebdafeb41382 ""
   (generated)
   "main.bbl"
   "main.blg"
+<<<<<<< HEAD
 ["pdflatex"] 1669557577 "/media/kaveen/D/Kwork/Proposal/MSU-Proposal-LaTeX/main.tex" "main.pdf" "main" 1669557578
   "/etc/texmf/web2c/texmf.cnf" 1656072177 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/kaveen/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1666742866 14040 c7f47c1fbf4128c55f543bf374698b4d ""
   "/media/kaveen/D/Kwork/Proposal/MSU-Proposal-LaTeX/main.tex" 1669557576 7998 626c294f1b54534512c89c0fe9bfe16e ""
+=======
+["pdflatex"] 1669555179 "/media/kaveen/D/Kwork/Proposal/MSU-Proposal-LaTeX/main.tex" "main.pdf" "main" 1669555180
+  "/etc/texmf/web2c/texmf.cnf" 1656072177 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/kaveen/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk" 1666742866 14040 c7f47c1fbf4128c55f543bf374698b4d ""
+  "/media/kaveen/D/Kwork/Proposal/MSU-Proposal-LaTeX/main.tex" 1669555179 8002 12d47aaa76165a4bd852c97e2ab06d8b ""
+>>>>>>> c866453 (added abstract)
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -131,6 +145,7 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1656072500 4073795 a82a847ac97773bf4a607ab050efa3a1 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1666761960 1484679 996c99fc2471bd9c547addae46cac6ed ""
   "MSUstyle.cls" 1666740279 52511 8a67d9ea90a0ffbce4df89affb06966b ""
+<<<<<<< HEAD
   "abstract.tex" 1669557576 98 6d51e24b11858f5372078a1893f05d67 ""
   "acknow.tex" 1669554534 38 06d3f0c16570432c1fc35bb171dc0cbe ""
   "introduction.aux" 1669557578 1478 a337705bce15b4f722c5e4ceb74a07e5 "pdflatex"
@@ -143,6 +158,20 @@
   "main.out" 1669557578 1216 b585642a2020411d038b7d81034f7bcb "pdflatex"
   "main.tex" 1669557576 7998 626c294f1b54534512c89c0fe9bfe16e ""
   "main.toc" 1669557578 138 eb6db8f8bc7e33bfa6f993563756d1e7 "pdflatex"
+=======
+  "abstract.tex" 1669555107 1160 ce72af195bc30408086eb6d91d6dfe02 ""
+  "acknow.tex" 1669554534 38 06d3f0c16570432c1fc35bb171dc0cbe ""
+  "introduction.aux" 1669555180 1478 7e7fff1dfdaeb7a30ba8c53bc9cddf3e "pdflatex"
+  "introduction.tex" 1669554883 1362 41e44f1c1c037771473b305302b74bdb ""
+  "main.aux" 1669555180 906 1a2eccc087c603133ca8277dfdef5522 "pdflatex"
+  "main.bbl" 1669555179 291 7fa8a9032e14094d81d10b4f854bf443 "bibtex main"
+  "main.loa" 1669555180 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.lof" 1669555180 119 a1d492f40e736d7d933dd99a4b0a5e24 "pdflatex"
+  "main.lot" 1669555180 26 f6dcb3f1086526fc84ac0af56483a58d "pdflatex"
+  "main.out" 1669555180 1216 b585642a2020411d038b7d81034f7bcb "pdflatex"
+  "main.tex" 1669555179 8002 12d47aaa76165a4bd852c97e2ab06d8b ""
+  "main.toc" 1669555180 138 eb6db8f8bc7e33bfa6f993563756d1e7 "pdflatex"
+>>>>>>> c866453 (added abstract)
   "nomenclature.tex" 1669554615 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
   "introduction.aux"

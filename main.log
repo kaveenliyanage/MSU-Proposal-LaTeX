@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.25)  27 NOV 2022 06:59
+=======
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.25)  27 NOV 2022 06:19
+>>>>>>> c866453 (added abstract)
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,6 +804,14 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ***************** Nomenclature ******************
+[5
+
+
+
+
+
+
+]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
@@ -832,7 +844,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./nomenclature.tex)
+ (./nomenclature.tex)
 ***************** Abstract ******************
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
@@ -866,13 +878,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(./abstract.tex) [5
-
-
-
-
-
-
+(./abstract.tex) [6
 
 
 
@@ -884,17 +890,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  (./introduction.tex
 *****************  Chapter 1. Introduction  *****************
-<example-image-duck.pdf, id=85, 184.55048pt x 114.2107pt>
+<example-image-duck.pdf, id=90, 184.55048pt x 114.2107pt>
 File: example-image-duck.pdf Graphic file (type pdf)
 <use example-image-duck.pdf>
-Package pdftex.def Info: example-image-duck.pdf  used on input line 9.
+Package pdftex.def Info: example-image-duck.pdf  used on input line 11.
 (pdftex.def)             Requested size: 375.80544pt x 232.59285pt.
 ) [1
 
 
 
 
- </usr/share/texlive/texmf-dist/tex/latex/duckuments/example-image-duck.pdf>] (./main.bbl) [2
+] [2 </usr/share/texlive/texmf-dist/tex/latex/duckuments/example-image-duck.pdf>] (./main.bbl) [3
 
 
 
@@ -903,18 +909,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B585642A2020411D038B7D81034F7BCB;1216.
  ) 
 Here is how much of TeX's memory you used:
- 15846 strings out of 480129
- 253762 string characters out of 5893408
+ 15848 strings out of 480129
+ 253775 string characters out of 5893408
  829418 words of memory out of 5000000
  33502 multiletter control sequences out of 15000+600000
  474725 words of font info for 50 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
- 83i,7n,131p,865b,665s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,7n,131p,1162b,667s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/kaveen/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (8 pages, 50295 bytes).
+Output written on main.pdf (10 pages, 53265 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 
