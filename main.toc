@@ -1,7 +1,10 @@
 \setcounter {tocdepth}{3}
 \contentsline {chapter}{\numberline {1.}\MakeUppercase {Introduction}}{1}{chapter.1}%
-\contentsline {section}{figure example}{1}{section*.10}%
+\contentsline {section}{figure example}{1}{section*.9}%
 \setcounter {tocdepth}{3}
 \contentsline {chapter}{\numberline {2.}\MakeUppercase {Background}}{3}{chapter.2}%
-\contentsline {section}{Sparse Representation and Dictionary Learning}{3}{section*.12}%
+\contentsline {section}{Graphs Embedding}{3}{section*.11}%
+\contentsline {section}{Sparse Representation and Dictionary Learning}{5}{section*.13}%
+\contentsline {section}{Feature Ranking}{7}{section*.14}%
+\contentsline {section}{Hyperbolic Space}{9}{section*.15}%
 \setcounter {tocdepth}{3}

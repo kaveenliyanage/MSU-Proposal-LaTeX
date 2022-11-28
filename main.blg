@@ -5,44 +5,44 @@ A level-1 auxiliary file: introduction.aux
 A level-1 auxiliary file: background.aux
 The style file: ieeetr.bst
 Database file #1: misc.bib
-You've used 4 entries,
+You've used 29 entries,
             1876 wiz_defined-function locations,
-            514 strings with 4442 characters,
-and the built_in function-call counts, 1306 in all, are:
-= -- 130
-> -- 47
+            698 strings with 10046 characters,
+and the built_in function-call counts, 8942 in all, are:
+= -- 876
+> -- 383
 < -- 0
-+ -- 17
-- -- 13
-* -- 99
-:= -- 182
-add.period$ -- 4
-call.type$ -- 4
-change.case$ -- 4
++ -- 136
+- -- 107
+* -- 673
+:= -- 1238
+add.period$ -- 31
+call.type$ -- 29
+change.case$ -- 28
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 68
-empty$ -- 121
-format.name$ -- 13
-if$ -- 314
+cite$ -- 29
+duplicate$ -- 470
+empty$ -- 809
+format.name$ -- 107
+if$ -- 2169
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 4
-newline$ -- 15
-num.names$ -- 4
-pop$ -- 14
+int.to.str$ -- 29
+missing$ -- 29
+newline$ -- 92
+num.names$ -- 35
+pop$ -- 98
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 50
+skip$ -- 347
 stack$ -- 0
-substring$ -- 104
-swap$ -- 30
+substring$ -- 604
+swap$ -- 214
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 13
-width$ -- 5
-write$ -- 42
+while$ -- 86
+width$ -- 31
+write$ -- 291
