@@ -159,4 +159,19 @@ K.~Liyanage and B.~M. Whitaker, ``Satellite image classification using
   {LC}-{KSVD} sparse coding,'' in {\em 2020 Intermountain Engineering,
   Technology and Computing ({IETC})}, {IEEE}, 2020.
 
+\bibitem{Neylon2006}
+T.~Neylon, {\em Sparse Solutions for Linear Prediction Problems}.
+\newblock PhD thesis, New York University, USA, 2006.
+\newblock AAI3221982.
+
+\bibitem{Yankelevsky2019}
+Y.~Yankelevsky and M.~Elad, ``Finding {GEMS}: Multi-scale dictionaries for
+  high-dimensional graph signals,'' {\em {IEEE} Transactions on Signal
+  Processing}, vol.~67, pp.~1889--1901, apr 2019.
+
+\bibitem{Matsuo2019}
+R.~Matsuo, R.~Nakamura, and H.~Ohsaki, ``Sparse representation of network
+  topology with k-{SVD} algorithm,'' in {\em 2019 {IEEE} 43rd Annual Computer
+  Software and Applications Conference ({COMPSAC})}, {IEEE}, jul 2019.
+
 \end{thebibliography}
