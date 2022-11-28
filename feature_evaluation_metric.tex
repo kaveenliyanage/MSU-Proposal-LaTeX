@@ -235,22 +235,22 @@ Preliminary results for \textit{ionosphere} dataset with Gaussian SVM is shown i
 \begin{table}
 \centering
 \caption{Methods used in MATLAB environment}\label{tab: methods}
-\begin{tabular}{|l|l|l|} 
-\hline
+\begin{tabular}{|l|l|l|}
+\toprule
 Dataset        & FR methods                        & Classifier method  \\ 
-\hline
+\midrule
 Credit ratings & mRMR                              & Gaus SVM               \\ 
-\hline
+\midrule
 Ionosphere              & RELEIFF                           & Lin SVM            \\ 
-\hline
+\midrule
 letters              & $\chi^2$-test                     & Quad SVM           \\ 
-\hline
+\midrule
                & NCA                               & Pol SVM                   \\
-\hline
+\midrule
                &    $D_{map}$                          & Logistic regression \\
-\hline
+\midrule
                &    $D_{util}$                        & Neural Network\\
-\hline
+\bottomrule
 \end{tabular}
 \end{table}
 
@@ -346,24 +346,24 @@ The satellite data set used in this proposal was created by the authors in\cite{
 %     \caption{DeepSat dataset properties}
 %     \label{tab: SatData}
 %     \begin{tabular}{|c|c|c|}
-%         \hline
+%         \midline
 %         \textbf{Prameters} & \textbf{Sat-4} & \textbf{Sat-6}\\
-%         \hline
+%         \midline
 %         Total images & $500,000$  & $405,000$  \\
-%         \hline
+%         \midline
 %         Classes & $4$ & $6$ \\
-%         \hline
+%         \midline
 %         Class names &  1) Barren Lands & 1) Barren Lands \\
 %          &  2) Trees & 2) Trees \\
 %          &  3) Grasslands & 3) Grasslands \\
 %          & 4) Others (none) & 4) Roads \\
 %          & & 5) Buildings\\
 %          & & 6) Water bodies \\
-%         \hline
+%         \midline
 %         Training Data & $400,000$ & $324,000$ \\
-%         \hline
+%         \midline
 %         Testing Data & $100,000$ & $81,000$\\
-%         \hline
+%         \midline
 %     \end{tabular}
 
 %     \end{center}
@@ -373,35 +373,35 @@ The satellite data set used in this proposal was created by the authors in\cite{
     \caption{Handcrafted features for the Sat-4 \& Sat-6 data.}\label{table: Features}
     \centering
     \begin{tabular}{|c|c|c|c|}
-        \hline
+        \toprule
         \textbf{} & \textbf{Indices} & \textbf{} & \textbf{Indices}\\
-        \hline
+        \midline
         1 & I CCM mean & 12 & I std \\
-        \hline
+        \midline
         2 & H CCM sosvh & 13 & H std \\
-        \hline
+        \midline
         3 & H CCM autoc & 14 & H mean \\
-        \hline
+        \midline
         4 & S CCM mean & 15 & I mean \\
-        \hline
+        \midline
         5 & H CCM mean & 16 & S mean \\
-        \hline
+        \midline
         6 & Simple Ratio & 17 & I CCM covariance \\
         & (SR) mean & & \\
-        \hline
+        \midline
         7 & S CCM 3rd moment & 18 & NIR mean \\
-        \hline
+        \midline
         8 & I CCM 3rd moment & 19 & Atmospherically Resistant  \\
         & & & Vegetation Index (ARVI) mean\\
-        \hline
+        \midline
         9 & I 3rd moment & 20 & Normalized Vegetation Index \\
         & & & (NDVI) mean\\
-        \hline
+        \midline
         10 & I variance & 21 & DCT highest non-DC component\\
-        \hline
+        \midline
         11 & NIR std & 22 & Enhanced Vegetation Index \\
         & & &EVI mean\\
-        \hline
+        \bottomrule
     \end{tabular}
 \end{table}
 
