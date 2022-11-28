@@ -1,10 +1,5 @@
 \begin{thebibliography}{10}
 
-\bibitem{Aharon2006}
-M.~Aharon, M.~Elad, and A.~Bruckstein, ``K-{SVD}: An algorithm for designing
-  overcomplete dictionaries for sparse representation,'' {\em {IEEE}
-  Transactions on Signal Processing}, vol.~54, pp.~4311--4322, nov 2006.
-
 \bibitem{Cai2018}
 H.~Cai, V.~W. Zheng, and K.~C.-C. Chang, ``A comprehensive survey of graph
   embedding: Problems, techniques, and applications,'' {\em {IEEE} Transactions
@@ -42,7 +37,7 @@ Q.~Le and T.~Mikolov, ``Distributed representations of sentences and
   documents,'' in {\em Proceedings of the 31st International Conference on
   Machine Learning} (E.~P. Xing and T.~Jebara, eds.), vol.~32 of {\em
   Proceedings of Machine Learning Research}, (Bejing, China), pp.~1188--1196,
-  PMLR, 22--24 Jun 2014.
+  PMLR, PMLR, 22--24 Jun 2014.
 
 \bibitem{Rong2014}
 X.~Rong, ``word2vec parameter learning explained,'' {\em arXiv preprint
@@ -58,6 +53,11 @@ B.~Rozemberczki, O.~Kiss, and R.~Sarkar, ``{Karate Club: An API Oriented
 M.~Elad, {\em Sparse and Redundant Representations: From Theory to Applications
   in Signal and Image Processing}.
 \newblock Springer, 2010.
+
+\bibitem{Aharon2006}
+M.~Aharon, M.~Elad, and A.~Bruckstein, ``K-{SVD}: An algorithm for designing
+  overcomplete dictionaries for sparse representation,'' {\em {IEEE}
+  Transactions on Signal Processing}, vol.~54, pp.~4311--4322, nov 2006.
 
 \bibitem{Rubinstein2013}
 R.~Rubinstein, T.~Peleg, and M.~Elad, ``Analysis k-{SVD}: A dictionary-learning
@@ -173,5 +173,73 @@ Y.~Yankelevsky and M.~Elad, ``Finding {GEMS}: Multi-scale dictionaries for
 R.~Matsuo, R.~Nakamura, and H.~Ohsaki, ``Sparse representation of network
   topology with k-{SVD} algorithm,'' in {\em 2019 {IEEE} 43rd Annual Computer
   Software and Applications Conference ({COMPSAC})}, {IEEE}, jul 2019.
+
+\bibitem{Huete1988}
+A.~Huete, ``A soil-adjusted vegetation index (savi),'' {\em Remote Sensing of
+  Environment}, vol.~25, no.~3, pp.~295--309, 1988.
+
+\bibitem{Basu2015}
+S.~Basu, S.~Ganguly, S.~Mukhopadhyay, R.~DiBiano, M.~Karki, and R.~Nemani,
+  ``Deepsat: a learning framework for satellite imagery,'' in {\em Proceedings
+  of the 23rd {SIGSPATIAL} International Conference on Advances in Geographic
+  Information Systems - {GIS} {\textquotesingle}15}, pp.~1--10, {ACM} Press,
+  2015.
+
+\bibitem{Goldberger2005}
+J.~Goldberger, G.~E. Hinton, S.~Roweis, and R.~R. Salakhutdinov,
+  ``Neighbourhood components analysis,'' in {\em Advances in Neural Information
+  Processing Systems} (L.~Saul, Y.~Weiss, and L.~Bottou, eds.), vol.~17, MIT
+  Press, 2005.
+
+\bibitem{Tipping1999}
+M.~E. Tipping and C.~M. Bishop, ``Probabilistic principal component analysis,''
+  {\em Journal of the Royal Statistical Society: Series B (Statistical
+  Methodology)}, vol.~61, no.~3, pp.~611--622, 1999.
+
+\bibitem{Zhang2010}
+Q.~Zhang and B.~Li, ``Discriminative k-{SVD} for dictionary learning in face
+  recognition,'' in {\em 2010 {IEEE} Computer Society Conference on Computer
+  Vision and Pattern Recognition}, {IEEE}, 2010.
+
+\bibitem{Kong2021}
+Y.~Kong, T.~Wang, F.~Chu, Z.~Feng, and I.~Selesnick, ``Discriminative
+  dictionary learning-based sparse classification framework for data-driven
+  machinery fault diagnosis,'' {\em {IEEE} Sensors Journal}, vol.~21, no.~6,
+  pp.~8117--8129, 2021.
+
+\bibitem{Dundar2019}
+T.~Dundar and T.~Ince, ``Sparse representation-based hyperspectral image
+  classification using multiscale superpixels and guided filter,'' {\em IEEE
+  Geoscience and Remote Sensing Letters}, vol.~16, no.~2, pp.~246--250, 2019.
+
+\bibitem{Pan2019}
+B.~Pan, Z.~Shi, and X.~Xu, ``Multiobjective-based sparse representation
+  classifier for hyperspectral imagery using limited samples,'' {\em IEEE
+  Transactions on Geoscience and Remote Sensing}, vol.~57, no.~1, pp.~239--249,
+  2019.
+
+\bibitem{Li2018}
+J.~Li, Q.~Du, Y.~Li, and W.~Li, ``Hyperspectral image classification with
+  imbalanced data based on orthogonal complement subspace projection,'' {\em
+  IEEE Transactions on Geoscience and Remote Sensing}, vol.~56, no.~7,
+  pp.~3838--3851, 2018.
+
+\bibitem{Huang2017}
+S.~Huang, H.~Zhang, and A.~Pi{\v{z}}urica, ``A robust sparse representation
+  model for hyperspectral image classification,'' {\em Sensors}, vol.~17,
+  p.~2087, sep 2017.
+
+\bibitem{Tang2014}
+Y.~Tang, X.~Li, Y.~Xu, Y.~Liu, J.~Wang, C.~Liu, and S.~Liu, ``Hyperspectral
+  image classification using sparse representation-based classifier,'' in {\em
+  2014 {IEEE} Geoscience and Remote Sensing Symposium}, {IEEE}, jul 2014.
+
+\bibitem{Vapnik1998}
+V.~N. Vapnik, {\em Statistical Learning Theory}.
+\newblock WILEY, 1998.
+
+\bibitem{Wright1995}
+R.~E. Wright, ``Logistic regression.,'' {\em American Psychological
+  Association}, 1995.
 
 \end{thebibliography}
