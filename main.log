@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.25)  28 NOV 2022 04:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.10.25)  28 NOV 2022 04:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -876,7 +876,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 ]
-<figures/presentation/Objective_overview.png, id=225, 863.47594pt x 540.51938pt>
+<figures/presentation/Objective_overview.png, id=261, 863.47594pt x 540.51938pt>
 File: figures/presentation/Objective_overview.png Graphic file (type png)
 <use figures/presentation/Objective_overview.png>
 Package pdftex.def Info: figures/presentation/Objective_overview.png  used on input line 30.
@@ -892,59 +892,82 @@ Package pdftex.def Info: figures/presentation/Objective_overview.png  used on in
 
 
 ]
-<figures/Graph_embedding/Gaph2Vec.png, id=261, 516.7305pt x 414.348pt>
+<figures/Graph_embedding/Gaph2Vec.png, id=297, 516.7305pt x 414.348pt>
 File: figures/Graph_embedding/Gaph2Vec.png Graphic file (type png)
 <use figures/Graph_embedding/Gaph2Vec.png>
 Package pdftex.def Info: figures/Graph_embedding/Gaph2Vec.png  used on input line 14.
 (pdftex.def)             Requested size: 422.77664pt x 339.01518pt.
- [4] [5 <./figures/Graph_embedding/Gaph2Vec.png>] [6] [7] [8]) [9]
+ [4] [5 <./figures/Graph_embedding/Gaph2Vec.png>] [6] [7]
+<figures/eng694/FR_methods.png, id=354, 761.84625pt x 303.38344pt>
+File: figures/eng694/FR_methods.png Graphic file (type png)
+<use figures/eng694/FR_methods.png>
+Package pdftex.def Info: figures/eng694/FR_methods.png  used on input line 42.
+(pdftex.def)             Requested size: 341.43306pt x 135.96577pt.
+ [8 <./figures/eng694/FR_methods.png>] [9]) [10]
 \openout2 = `preliminary_work.aux'.
 
  (./preliminary_work.tex
 *****************  Chapter 3. Preliminary Work  *****************
-<figures/Graph_embedding/GraphKSVD.png, id=353, 513.117pt x 406.51875pt>
+<figures/Graph_embedding/GraphKSVD.png, id=395, 513.117pt x 406.51875pt>
 File: figures/Graph_embedding/GraphKSVD.png Graphic file (type png)
 <use figures/Graph_embedding/GraphKSVD.png>
 Package pdftex.def Info: figures/Graph_embedding/GraphKSVD.png  used on input line 12.
 (pdftex.def)             Requested size: 422.77664pt x 334.9603pt.
-[10
+[11
 
 
 
 
 ]
-<figures/Graph_embedding/Workflow.png, id=361, 404.712pt x 516.7305pt>
+<figures/Graph_embedding/Workflow.png, id=404, 404.712pt x 516.7305pt>
 File: figures/Graph_embedding/Workflow.png Graphic file (type png)
 <use figures/Graph_embedding/Workflow.png>
 Package pdftex.def Info: figures/Graph_embedding/Workflow.png  used on input line 17.
 (pdftex.def)             Requested size: 328.82707pt x 419.85826pt.
- [11 <./figures/Graph_embedding/GraphKSVD.png>] [12 <./figures/Graph_embedding/Workflow.png>]
+ [12 <./figures/Graph_embedding/GraphKSVD.png>] [13 <./figures/Graph_embedding/Workflow.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 30--30
 [][][][][]$\OT1/cmtt/m/n/10 https : / / github . com / benedekrozemberczki / karateclub / blob / master / karateclub / utils /
  []
 
-[13]
-<figures/SR/S4_FZN.png, id=395, 343.2825pt x 265.59225pt>
+[14] [15] [16]
+<figures/eng694/SR_sol.png, id=454, 633.86812pt x 242.40562pt>
+File: figures/eng694/SR_sol.png Graphic file (type png)
+<use figures/eng694/SR_sol.png>
+Package pdftex.def Info: figures/eng694/SR_sol.png  used on input line 75.
+(pdftex.def)             Requested size: 341.43306pt x 130.57527pt.
+ [17]
+<figures/eng694/D_map.png, id=461, 510.40688pt x 435.12563pt>
+File: figures/eng694/D_map.png Graphic file (type png)
+<use figures/eng694/D_map.png>
+Package pdftex.def Info: figures/eng694/D_map.png  used on input line 86.
+(pdftex.def)             Requested size: 187.89914pt x 160.18394pt.
+<figures/eng694/D_util.png, id=462, 490.83376pt x 435.12563pt>
+File: figures/eng694/D_util.png Graphic file (type png)
+<use figures/eng694/D_util.png>
+Package pdftex.def Info: figures/eng694/D_util.png  used on input line 88.
+(pdftex.def)             Requested size: 187.89914pt x 166.5711pt.
+ [18 <./figures/eng694/SR_sol.png> <./figures/eng694/D_map.png> <./figures/eng694/D_util.png>]
+<figures/SR/S4_FZN.png, id=477, 343.2825pt x 265.59225pt>
 File: figures/SR/S4_FZN.png Graphic file (type png)
 <use figures/SR/S4_FZN.png>
-Package pdftex.def Info: figures/SR/S4_FZN.png  used on input line 56.
+Package pdftex.def Info: figures/SR/S4_FZN.png  used on input line 122.
 (pdftex.def)             Requested size: 140.92793pt x 109.0313pt.
-<figures/SR/S4_LCK.png, id=396, 343.2825pt x 265.59225pt>
+<figures/SR/S4_LCK.png, id=478, 343.2825pt x 265.59225pt>
 File: figures/SR/S4_LCK.png Graphic file (type png)
 <use figures/SR/S4_LCK.png>
-Package pdftex.def Info: figures/SR/S4_LCK.png  used on input line 58.
+Package pdftex.def Info: figures/SR/S4_LCK.png  used on input line 124.
 (pdftex.def)             Requested size: 140.92793pt x 109.0313pt.
-<figures/SR/S6_FZN.png, id=397, 411.939pt x 328.8285pt>
+<figures/SR/S6_FZN.png, id=479, 411.939pt x 328.8285pt>
 File: figures/SR/S6_FZN.png Graphic file (type png)
 <use figures/SR/S6_FZN.png>
-Package pdftex.def Info: figures/SR/S6_FZN.png  used on input line 62.
+Package pdftex.def Info: figures/SR/S6_FZN.png  used on input line 128.
 (pdftex.def)             Requested size: 187.89914pt x 149.9885pt.
-<figures/SR/S6_LCK.png, id=398, 411.939pt x 328.8285pt>
+<figures/SR/S6_LCK.png, id=480, 411.939pt x 328.8285pt>
 File: figures/SR/S6_LCK.png Graphic file (type png)
 <use figures/SR/S6_LCK.png>
-Package pdftex.def Info: figures/SR/S6_LCK.png  used on input line 64.
+Package pdftex.def Info: figures/SR/S6_LCK.png  used on input line 130.
 (pdftex.def)             Requested size: 187.89914pt x 149.9885pt.
- [14] [15 <./figures/SR/S4_FZN.png> <./figures/SR/S4_LCK.png> <./figures/SR/S6_FZN.png> <./figures/SR/S6_LCK.png>] [16]
+ [19] [20 <./figures/SR/S4_FZN.png> <./figures/SR/S4_LCK.png> <./figures/SR/S6_FZN.png> <./figures/SR/S6_LCK.png>] [21]
 Package epstopdf Info: Source file: <figures/SR/Dict_FR.eps>
 (epstopdf)                    date: 2022-11-28 00:33:39
 (epstopdf)                    size: 115422 bytes
@@ -952,86 +975,44 @@ Package epstopdf Info: Source file: <figures/SR/Dict_FR.eps>
 (epstopdf)                    date: 2022-11-28 02:15:07
 (epstopdf)                    size: 23887 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/SR/Dict_FR-eps-converted-to.pdf figures/SR/Dict_FR.eps>
-(epstopdf)             \includegraphics on input line 112.
+(epstopdf)             \includegraphics on input line 178.
 Package epstopdf Info: Output file is already uptodate.
-<figures/SR/Dict_FR-eps-converted-to.pdf, id=426, 882.29625pt x 733.74126pt>
+<figures/SR/Dict_FR-eps-converted-to.pdf, id=503, 882.29625pt x 733.74126pt>
 File: figures/SR/Dict_FR-eps-converted-to.pdf Graphic file (type pdf)
 <use figures/SR/Dict_FR-eps-converted-to.pdf>
-Package pdftex.def Info: figures/SR/Dict_FR-eps-converted-to.pdf  used on input line 112.
+Package pdftex.def Info: figures/SR/Dict_FR-eps-converted-to.pdf  used on input line 178.
 (pdftex.def)             Requested size: 469.75502pt x 390.66118pt.
- [17] [18 <./figures/SR/Dict_FR-eps-converted-to.pdf>]) [19]
+ [22 <./figures/SR/Dict_FR-eps-converted-to.pdf>] [23]) [24]
 \openout2 = `proposed.aux'.
 
  (./proposed.tex
 *****************  Chapter 4. Proposed Work  *****************
-
-LaTeX Warning: Reference `fig: FR_degradation' on page 20 undefined on input line 10.
-
-./proposed.tex:15: Missing number, treated as zero.
-<to be read again> 
-                   [
-l.15 \begin{tabular*}[
-                      !tbh]{{c|c|c}}
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-./proposed.tex:15: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   [
-l.15 \begin{tabular*}[
-                      !tbh]{{c|c|c}}
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
+[25
 
 
-./proposed.tex:15: Package calc Error: `[' invalid at this point.
-
-See the calc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 \begin{tabular*}[
-                      !tbh]{{c|c|c}}
-I expected to see one of: + - * / )
 
 
-./proposed.tex:15: LaTeX Error: Illegal character in array arg.
+] [26] [27] [28]) [29] (./main.bbl [30
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.15 \begin{tabular*}[!
-                       tbh]{{c|c|c}}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
-./proposed.tex:16: Misplaced \noalign.
-\toprule ->\noalign 
-                    {\ifnum 0=`}\fi \@aboverulesep =\abovetopsep \global \@b...
-l.16 \toprule
-             
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
 
-./proposed.tex:17: Missing } inserted.
-<inserted text> 
-                }
-l.17 D
-      ataset        & FR methods                        & Classifier method  \\
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+] [31] [32] [33] [34]) [35] (./main.aux (./introduction.aux) (./background.aux) (./preliminary_work.aux) (./proposed.aux))
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: DC1F4F8CE26CCB5C9D2501669FB333AC;5647.
+ ) 
+Here is how much of TeX's memory you used:
+ 16559 strings out of 480129
+ 266850 string characters out of 5893408
+ 838106 words of memory out of 5000000
+ 33995 multiletter control sequences out of 15000+600000
+ 483310 words of font info for 81 fonts, out of 8000000 for 9000
+ 81 hyphenation exceptions out of 8191
+ 83i,10n,131p,1632b,667s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/kaveen/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcti1200.600pk> </home/kaveen/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/ccicons/ccicons.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on main.pdf (43 pages, 1022953 bytes).
+PDF statistics:
+ 751 PDF objects out of 1000 (max. 8388607)
+ 636 compressed objects within 7 object streams
+ 177 named destinations out of 1000 (max. 500000)
+ 370 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-./proposed.tex:17: Missing } inserted.
-<inserted text> 
-                }
-l.17 D
-  

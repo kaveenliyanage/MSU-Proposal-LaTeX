@@ -35,7 +35,14 @@ Traditional dictionary learning models do not take into account the class imbala
 
 \section{Feature Ranking}
 
-eature Ranking (FR) is an essential part of the machine learning pipeline to identify, reduce, remove, or craft features that benefits ML performance and reduce the cost of the operations. In general, FR methods evaluate features by looking at the amount of information they provide and ranking them accordingly so that the most relevant and complementary features can be used in ML training. There are three main categories of methods for FR algorithms: Filter methods (FM), Wrapper methods (WM), and Embedded methods (EM). The FR methods can be further classified as \emph{myopic} and \emph{non-myopic}. Whereas\emph{myopic} methods only evaluate the feature by itself,\emph{non-myopic} methods take into the consideration of interrelationship between the features. Several surveys outline the current state-of-the-art in feature assessment techniques\cite{Uthman2020, Sangodiah2014, Effrosynidis2021, Jovic2015}.
+eature Ranking (FR) is an essential part of the machine learning pipeline to identify, reduce, remove, or craft features that benefits ML performance and reduce the cost of the operations. In general, FR methods evaluate features by looking at the amount of information they provide and ranking them accordingly so that the most relevant and complementary features can be used in ML training. There are three main categories of methods for FR algorithms: Filter methods (FM), Wrapper methods (WM), and Embedded methods (EM). The FR methods can be further classified as \emph{myopic} and \emph{non-myopic}. Whereas\emph{myopic} methods only evaluate the feature by itself,\emph{non-myopic} methods take into the consideration of interrelationship between the features. Several surveys outline the current state-of-the-art in feature assessment techniques\cite{Uthman2020, Sangodiah2014, Effrosynidis2021, Jovic2015}. A summary of the method's pros and cons are shown in fig.\ref{fig: FR_methods}.
+
+\begin{figure}[!t]
+    \centering
+    \includegraphics[width=12cm]{figures/eng694/FR_methods.png}
+     \caption{Classification of the FR methods and summary of pros and cons}\label{fig: FR_methods}
+\end{figure}
+
 
 In FM, intrinsic properties are evaluated to determine the relevance of the feature. FM methods are generally computationally inexpensive and do not depend on the ML model since the evaluation is done independently. In WM the feature ranking is tied to the ML model performance. This method is more computationally expensive than the FM as it needs to train multiple ML models to identify which features contribute more. WM is model- and task-specific and, as a result, gives better results. However, WM has to be performed again for a different task or a model. EM is similar to WM, however, it performs the feature selection while the ML model is trained. Therefore, time is saved by avoiding training multiple models by sacrificing performance compared to WM\@. EM is also model and task-specific.  
 
